@@ -1,0 +1,9 @@
+//
+// Created by aSUSS on 2018/6/21.
+//
+
+#ifndef SOFTWARECOURSEDESIGN_COMPILE_H
+#define SOFTWARECOURSEDESIGN_COMPILE_H
+
+#endif //SOFTWARECOURSEDESIGN_COMPILE_H
+int compile();
