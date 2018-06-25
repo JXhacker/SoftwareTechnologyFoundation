@@ -4,7 +4,7 @@
 #include "wordAnalysis.h"
 #include "compile.h"
 #include "stdio.h"
-int ma() {
+int main() {
 
 
     //wordAnalysisMain();

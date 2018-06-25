@@ -473,7 +473,7 @@ void print(GoodsInfo *goodsInfo, int num, Graph graph1, Graph graph2) {
 //================================================================================================================
 
 
-int main() {
+int m() {
 
 
 

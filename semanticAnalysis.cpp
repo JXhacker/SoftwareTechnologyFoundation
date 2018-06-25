@@ -16,8 +16,8 @@ int semanticAnalysisMain() {
     char szTest2[30] = {0};
     int count = 0;
     char str[30][30];
-    char str1[30][30]={0};
-    int countFinish=0;
+    char str1[30][30] = {0};
+    int countFinish = 0;
 
     FILE *fp = fopen("E:\\output.dyd", "r");
 
@@ -97,6 +97,7 @@ int semanticAnalysisMain() {
 
             if (str[j][0] >= '0' && str[j][0] <= '9') {
                 data[dataNum] = atoi(str[j]);
+
                 fprintf(fp2, "%d ", data[dataNum]);
                 //printf("%d ", data[dataNum]);
                 dataNum++;
@@ -105,11 +106,13 @@ int semanticAnalysisMain() {
             //fprintf(fp2, "select ");
             if (!strcmp(str[j], "from")) {
                 //printf("%s\n", str[j + 1]);
+
                 fprintf(fp2, "%s ", str[j + 1]);
                 //printf("find");
             }
             if (str[j][0] >= '0' && str[j][0] <= '9') {
 
+                fprintf(fp2, "%s ", str[j - 2]);
                 fprintf(fp2, "%d ", atoi(str[j]));
                 //printf("%d ", atoi(str[j]));
 
@@ -123,6 +126,7 @@ int semanticAnalysisMain() {
             }
             if (str[j][0] >= '0' && str[j][0] <= '9') {
 
+                fprintf(fp2, "%s ", str[j - 2]);
                 fprintf(fp2, "%d ", atoi(str[j]));
                 //printf("%d ", atoi(str[j]));
 
@@ -136,6 +140,7 @@ int semanticAnalysisMain() {
             }
             if (str[j][0] >= '0' && str[j][0] <= '9') {
 
+                fprintf(fp2, "%s ", str[j - 2]);
                 fprintf(fp2, "%d ", atoi(str[j]));
                 //printf("%d ", atoi(str[j]));
 

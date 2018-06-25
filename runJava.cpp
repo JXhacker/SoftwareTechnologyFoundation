@@ -5,7 +5,7 @@
 #include <windows.h>
 #include<stdio.h>
 #include<stdlib.h>
-int m()
+int ma()
 {
     return system("java FileLockTest");
 
